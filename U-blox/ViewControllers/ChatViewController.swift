@@ -175,7 +175,7 @@ fileprivate extension ChatViewController {
             Logger.quiet(message: "messageTextField has no text")
             return
         }
-        let message = messageTextFieldText + (sendCrSwitch.isOn ? "\r" : "")
+        let message = messageTextFieldText + (sendCrSwitch.isOn ? "\r\n" : "")
         BluetoothManager.shared.currentSerialPort?.write(data: message.data(using: .utf8) ?? Data())
         self.add(chatMessage: ChatMessage(userName: "Me", message: message))
         messageTextField.text = ""
