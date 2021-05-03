@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gev-4u-0Jq">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gev-4u-0Jq">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Arial.ttf">
-            <string>ArialMT</string>
-        </array>
-        <array key="ArialBold.ttf">
-            <string>Arial-BoldMT</string>
-        </array>
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Info View Controller-->
         <scene sceneID="gQJ-AD-Xc0">
@@ -31,7 +17,7 @@
                         <viewControllerLayoutGuide type="bottom" id="LgB-3q-Sbr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="foV-6x-PL3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJb-zD-ni1">
@@ -43,8 +29,8 @@
                                     <navigationItem id="Awt-b8-OHB">
                                         <nil key="title"/>
                                         <barButtonItem key="leftBarButtonItem" id="sA2-tA-cpJ">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HSQ-tF-oUn">
-                                                <rect key="frame" x="16" y="6" width="71" height="32"/>
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="HSQ-tF-oUn">
+                                                <rect key="frame" x="16" y="12" width="71" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal" title="Close">
@@ -56,7 +42,7 @@
                                             </button>
                                         </barButtonItem>
                                         <view key="titleView" contentMode="scaleToFill" id="ii2-Ng-ocd">
-                                            <rect key="frame" x="187.5" y="22" width="0.0" height="0.0"/>
+                                            <rect key="frame" x="187.5" y="28" width="0.0" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cdd-qy-e8y">
@@ -70,13 +56,13 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phq-kL-kNL">
-                                <rect key="frame" x="21" y="85" width="79" height="22.5"/>
+                                <rect key="frame" x="21" y="65" width="79" height="22.5"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1t-MF-bqm">
-                                <rect key="frame" x="16" y="115.5" width="343" height="278"/>
+                                <rect key="frame" x="16" y="95.5" width="343" height="278"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="278" id="ylM-H6-OMj"/>
                                 </constraints>
@@ -87,8 +73,8 @@ A lot of companies are developing and distributing chips and modules for wireles
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4i3-Ul-wGu">
-                                <rect key="frame" x="113" y="587" width="149" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4i3-Ul-wGu">
+                                <rect key="frame" x="113" y="567" width="149" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="149" id="UBh-fn-Xva"/>
                                     <constraint firstAttribute="height" constant="30" id="aGO-B7-Fex"/>
@@ -101,7 +87,7 @@ A lot of companies are developing and distributing chips and modules for wireles
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version: 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjM-LQ-Neo">
-                                <rect key="frame" x="0.0" y="622" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="602" width="375" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Ho1-BO-8wQ"/>
                                 </constraints>
@@ -110,6 +96,7 @@ A lot of companies are developing and distributing chips and modules for wireles
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="9N5-pm-ztw"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="KjM-LQ-Neo" secondAttribute="trailing" id="331-Ec-gRO"/>
@@ -127,7 +114,6 @@ A lot of companies are developing and distributing chips and modules for wireles
                             <constraint firstItem="Phq-kL-kNL" firstAttribute="leading" secondItem="foV-6x-PL3" secondAttribute="leading" constant="21" id="v2B-2I-oAT"/>
                             <constraint firstAttribute="centerX" secondItem="4i3-Ul-wGu" secondAttribute="centerX" id="wJa-cm-6eu"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="9N5-pm-ztw"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
@@ -147,22 +133,22 @@ A lot of companies are developing and distributing chips and modules for wireles
                         <viewControllerLayoutGuide type="bottom" id="EOW-QO-23i"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YmP-KD-TrR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0S1-Yb-foQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="488"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="508"/>
                                 <color key="backgroundColor" red="0.95075207949999996" green="0.95072358850000005" blue="0.95073974130000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScanTableViewCell" rowHeight="70" id="EuC-EF-s0D" customClass="ScanTableViewCell" customModule="U_blox" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="22" width="375" height="70"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EuC-EF-s0D" id="SKS-Df-UGd">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yf-jj-WjV" userLabel="Separator">
-                                                    <rect key="frame" x="0.0" y="68.5" width="375" height="1"/>
+                                                    <rect key="frame" x="0.0" y="69" width="375" height="1"/>
                                                     <color key="backgroundColor" red="0.57665979860000005" green="0.57664251330000005" blue="0.57665234799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="5BT-V1-aYm"/>
@@ -240,8 +226,8 @@ A lot of companies are developing and distributing chips and modules for wireles
                                     <outlet property="delegate" destination="pOa-Xc-ehz" id="CBH-Ih-1R7"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4u-le-aTm">
-                                <rect key="frame" x="7" y="496" width="361" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4u-le-aTm">
+                                <rect key="frame" x="7" y="516" width="361" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cO0-KM-kXf"/>
@@ -261,9 +247,10 @@ A lot of companies are developing and distributing chips and modules for wireles
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ngN-Mh-uMa">
-                                <rect key="frame" x="339" y="511" width="20" height="20"/>
+                                <rect key="frame" x="339" y="531" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="jye-JO-Pma"/>
                         <color key="backgroundColor" red="0.95075207949999996" green="0.95072358850000005" blue="0.95073974130000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="0S1-Yb-foQ" secondAttribute="trailing" id="1Oq-0R-oHI"/>
@@ -276,7 +263,6 @@ A lot of companies are developing and distributing chips and modules for wireles
                             <constraint firstItem="0S1-Yb-foQ" firstAttribute="leading" secondItem="YmP-KD-TrR" secondAttribute="leading" id="wMx-4f-nFq"/>
                             <constraint firstItem="y4u-le-aTm" firstAttribute="leading" secondItem="YmP-KD-TrR" secondAttribute="leading" constant="7" id="yWm-Np-jpT"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="jye-JO-Pma"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="R2h-aK-MQn">
@@ -298,7 +284,7 @@ A lot of companies are developing and distributing chips and modules for wireles
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="vTw-SE-yBN">
-                                    <rect key="frame" x="56" y="9" width="16" height="16"/>
+                                    <rect key="frame" x="56" y="8.5" width="16" height="16"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -336,6 +322,7 @@ A lot of companies are developing and distributing chips and modules for wireles
                 <navigationController id="5Cc-9u-7Wd" userLabel="Scan" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Scan" image="scan" id="20M-Rc-eev"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="AyW-EQ-ANw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -359,7 +346,7 @@ A lot of companies are developing and distributing chips and modules for wireles
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Port" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5B-Mc-NBi">
-                                <rect key="frame" x="16" y="74" width="100" height="30"/>
+                                <rect key="frame" x="16" y="54" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="h9c-mH-1B0"/>
                                     <constraint firstAttribute="height" constant="30" id="pFD-Nr-XEb"/>
@@ -368,8 +355,8 @@ A lot of companies are developing and distributing chips and modules for wireles
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dav-c7-tQw">
-                                <rect key="frame" x="148" y="124" width="79" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dav-c7-tQw">
+                                <rect key="frame" x="148" y="104" width="79" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="shD-co-3Ys"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79" id="zg7-dW-2ge"/>
@@ -380,22 +367,22 @@ A lot of companies are developing and distributing chips and modules for wireles
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Es-mD-7gV">
-                                <rect key="frame" x="16" y="170" width="343" height="432"/>
+                                <rect key="frame" x="16" y="150" width="343" height="452"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="55123" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gxW-Up-uy0">
-                                <rect key="frame" x="129" y="74" width="97" height="30"/>
+                                <rect key="frame" x="129" y="54" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="XRQ-sv-CFO"/>
                                     <constraint firstAttribute="height" constant="30" id="j09-B0-nRA"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Ce-BD-iSI"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bb0-qj-NVG" firstAttribute="top" secondItem="6Es-mD-7gV" secondAttribute="bottom" constant="16" id="EkB-yi-xw3"/>
@@ -409,7 +396,6 @@ A lot of companies are developing and distributing chips and modules for wireles
                             <constraint firstItem="6Es-mD-7gV" firstAttribute="top" secondItem="dav-c7-tQw" secondAttribute="bottom" constant="16" id="qin-Bg-9sm"/>
                             <constraint firstItem="G5B-Mc-NBi" firstAttribute="leading" secondItem="cqZ-KR-Muc" secondAttribute="leading" constant="16" id="vWF-3N-wXz"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="2Ce-BD-iSI"/>
                     </view>
                     <navigationItem key="navigationItem" id="LJT-9P-lU6">
                         <nil key="title"/>
@@ -478,6 +464,7 @@ A lot of companies are developing and distributing chips and modules for wireles
                     <tabBarItem key="tabBarItem" title="Server" image="overview" id="SGf-dL-LF2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g3r-rw-iu4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -490,6 +477,9 @@ A lot of companies are developing and distributing chips and modules for wireles
             <point key="canvasLocation" x="-3328" y="-41.379310344827587"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Afd-eK-vwW"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="delete_devices.png" width="16" height="16"/>
         <image name="info.png" width="16" height="16"/>
@@ -498,7 +488,4 @@ A lot of companies are developing and distributing chips and modules for wireles
         <image name="scan" width="30" height="30"/>
         <image name="signal_indicator_0" width="18" height="18"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Afd-eK-vwW"/>
-    </inferredMetricsTieBreakers>
 </document>
