@@ -890,7 +890,7 @@
         <!--Terminal-->
         <scene sceneID="AsJ-fH-fJJ">
             <objects>
-                <viewController title="Terminal" id="6tJ-XI-Nnx" sceneMemberID="viewController">
+                <viewController title="Terminal" id="6tJ-XI-Nnx" customClass="TerminalViewController" customModule="U_blox" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tyl-eU-hQR"/>
                         <viewControllerLayoutGuide type="bottom" id="X7T-Nk-bVy"/>
@@ -913,6 +913,9 @@
                                 <state key="normal" title="Tare">
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickTare:" destination="6tJ-XI-Nnx" eventType="touchUpInside" id="hC3-ay-Rgt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxF-K9-Xfw">
                                 <rect key="frame" x="230" y="359" width="32" height="30"/>
@@ -920,11 +923,30 @@
                                 <state key="normal" title="Zero">
                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickZero:" destination="6tJ-XI-Nnx" eventType="touchUpInside" id="AGS-x2-anr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRC-Xs-LC5">
+                                <rect key="frame" x="142" y="453" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SI">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickSI:" destination="6tJ-XI-Nnx" eventType="touchUpInside" id="sgS-OL-It8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.16135072710000001" green="0.34521815179999998" blue="0.64835470910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Terminal" id="Egb-Sa-D3I"/>
+                    <connections>
+                        <outlet property="outputLabel" destination="gVn-Zm-46W" id="2cI-gB-YA1"/>
+                        <outlet property="siButton" destination="XRC-Xs-LC5" id="La2-jJ-52W"/>
+                        <outlet property="tareButton" destination="xh6-oD-W7P" id="DIJ-I8-eIv"/>
+                        <outlet property="zeroButton" destination="jxF-K9-Xfw" id="R1e-hU-G7u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UXp-ZI-kmB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

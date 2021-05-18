@@ -58,6 +58,7 @@
 		AB5B399F1A9B24EB002ACEDF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5B399E1A9B24EB002ACEDF /* Images.xcassets */; };
 		AB5B39A21A9B24EB002ACEDF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB5B39A01A9B24EB002ACEDF /* LaunchScreen.xib */; };
 		ABC252BE1C5253AF0046A8B1 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC252BD1C5253AF0046A8B1 /* art.scnassets */; };
+		B33D3E8E2640C2470039A684 /* TerminalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33D3E8D2640C2470039A684 /* TerminalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		AB5B399E1A9B24EB002ACEDF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB5B39A11A9B24EB002ACEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ABC252BD1C5253AF0046A8B1 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		B33D3E8D2640C2470039A684 /* TerminalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 			children = (
 				7A96C2E5200F4A7F0069C0C1 /* ChatTableViewCell.swift */,
 				7A96C2E6200F4A7F0069C0C1 /* ChatViewController.swift */,
+				B33D3E8D2640C2470039A684 /* TerminalViewController.swift */,
 				7A96C2E7200F4A7F0069C0C1 /* EditViewController.swift */,
 				7A96C2DF200F4A7D0069C0C1 /* InfoViewController.swift */,
 				7A96C2E0200F4A7D0069C0C1 /* OverviewViewController.swift */,
@@ -475,6 +478,7 @@
 				51C01CAC201B3F5300D1C853 /* IconUtil.swift in Sources */,
 				513842972033161900B82A38 /* Server.swift in Sources */,
 				7A96C2FA200F4A800069C0C1 /* ServicesDetailTableViewCell.swift in Sources */,
+				B33D3E8E2640C2470039A684 /* TerminalViewController.swift in Sources */,
 				7A96C2F5200F4A800069C0C1 /* EditViewController.swift in Sources */,
 				7A96C2F9200F4A800069C0C1 /* ServicesDetailViewController.swift in Sources */,
 				51C01CA0201A2D4300D1C853 /* BaseSerialPortTabBarViewController.swift in Sources */,
