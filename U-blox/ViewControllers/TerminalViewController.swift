@@ -10,8 +10,7 @@ import UIKit
 import CoreBluetooth
 
 class TerminalViewController: BaseSerialPortTabBarViewController  {
-
-    
+    var siTimer: Timer?
 
     @IBOutlet weak var outputLabel: UILabel!
     @IBOutlet weak var tareButton: UIButton!
@@ -27,14 +26,13 @@ class TerminalViewController: BaseSerialPortTabBarViewController  {
     
     @IBAction func clickTare(_ sender: Any) {
         NSLog("click on Tare")
-        outputLabel.text = "Tare"
+        //outputLabel.text = "Tare"
         sendMessage("T")
     }
     
     @IBAction func clickZero(_ sender: Any) {
         NSLog("click on Zero")
         outputLabel.text = "Z"
-        
     }
     
     /*
@@ -67,6 +65,9 @@ extension TerminalViewController {
         if BluetoothManager.shared.currentPeripheral!.isSupportingSerialPort {
             outputLabel.text = ""
             tareButton.isEnabled = true
+            siTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+                self.sendSI()
+            }
         } else {
             outputLabel.text = "Service unavalible"
             tareButton.isEnabled = false
@@ -86,8 +87,16 @@ extension TerminalViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        self.siTimer?.invalidate()
 
         NotificationCenter.default.removeObserver(self)
+    }
+}
+
+extension TerminalViewController {
+    func sendSI() {
+        NSLog("timer send SI")
+        sendMessage("SI")
     }
 }
 
@@ -105,6 +114,7 @@ extension TerminalViewController : DataStreamDelegate {
     
     func onRead(data: Data) {
         let message = String(data: data, encoding: .utf8)!
+        NSLog(message)
         outputLabel.text = message
     }
 }
